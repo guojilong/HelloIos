@@ -13,7 +13,8 @@
 		431C1AD01DE2919500ED61BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431C1ACE1DE2919500ED61BE /* Main.storyboard */; };
 		431C1AD31DE2919500ED61BE /* shansong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 431C1AD11DE2919500ED61BE /* shansong.xcdatamodeld */; };
 		431C1AD51DE2919500ED61BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431C1AD41DE2919500ED61BE /* Assets.xcassets */; };
-		431C1AD81DE2919500ED61BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 431C1AD61DE2919500ED61BE /* LaunchScreen.storyboard */; };
+		43EF4EC71DE315FC00C12F3E /* 启动页640-1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EF4EC51DE315FC00C12F3E /* 启动页640-1136.png */; };
+		43EF4EC81DE315FC00C12F3E /* 启动页750-1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EF4EC61DE315FC00C12F3E /* 启动页750-1334.png */; };
 		991D9A2640EB4F8DAF190A4C /* libPods-shansong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C512F6F72528B70519255 /* libPods-shansong.a */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,9 @@
 		431C1ACF1DE2919500ED61BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		431C1AD21DE2919500ED61BE /* shansong.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shansong.xcdatamodel; sourceTree = "<group>"; };
 		431C1AD41DE2919500ED61BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		431C1AD71DE2919500ED61BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431C1AD91DE2919500ED61BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EF4EC51DE315FC00C12F3E /* 启动页640-1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页640-1136.png"; sourceTree = "<group>"; };
+		43EF4EC61DE315FC00C12F3E /* 启动页750-1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页750-1334.png"; sourceTree = "<group>"; };
 		A2E0698133D09F44B98365F8 /* Pods-shansong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shansong.release.xcconfig"; path = "Pods/Target Support Files/Pods-shansong/Pods-shansong.release.xcconfig"; sourceTree = "<group>"; };
 		AD3C512F6F72528B70519255 /* libPods-shansong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shansong.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,13 +69,13 @@
 		431C1AC41DE2919500ED61BE /* shansong */ = {
 			isa = PBXGroup;
 			children = (
+				43EF4EC21DE313E500C12F3E /* Resource */,
 				431C1AC81DE2919500ED61BE /* AppDelegate.h */,
 				431C1AC91DE2919500ED61BE /* AppDelegate.m */,
 				431C1ACB1DE2919500ED61BE /* ViewController.h */,
 				431C1ACC1DE2919500ED61BE /* ViewController.m */,
 				431C1ACE1DE2919500ED61BE /* Main.storyboard */,
 				431C1AD41DE2919500ED61BE /* Assets.xcassets */,
-				431C1AD61DE2919500ED61BE /* LaunchScreen.storyboard */,
 				431C1AD91DE2919500ED61BE /* Info.plist */,
 				431C1AD11DE2919500ED61BE /* shansong.xcdatamodeld */,
 				431C1AC51DE2919500ED61BE /* Supporting Files */,
@@ -87,6 +89,15 @@
 				431C1AC61DE2919500ED61BE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43EF4EC21DE313E500C12F3E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				43EF4EC51DE315FC00C12F3E /* 启动页640-1136.png */,
+				43EF4EC61DE315FC00C12F3E /* 启动页750-1334.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		5F1B2B28AB2A9DFB9873B78E /* Pods */ = {
@@ -166,8 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431C1AD81DE2919500ED61BE /* LaunchScreen.storyboard in Resources */,
 				431C1AD51DE2919500ED61BE /* Assets.xcassets in Resources */,
+				43EF4EC71DE315FC00C12F3E /* 启动页640-1136.png in Resources */,
+				43EF4EC81DE315FC00C12F3E /* 启动页750-1334.png in Resources */,
 				431C1AD01DE2919500ED61BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +255,6 @@
 				431C1ACF1DE2919500ED61BE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		431C1AD61DE2919500ED61BE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				431C1AD71DE2919500ED61BE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,6 +345,7 @@
 			baseConfigurationReference = 3CFD9642B9FD680E07073693 /* Pods-shansong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = shansong/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -354,6 +359,7 @@
 			baseConfigurationReference = A2E0698133D09F44B98365F8 /* Pods-shansong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = shansong/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -381,6 +387,7 @@
 				431C1ADE1DE2919500ED61BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
