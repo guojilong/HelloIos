@@ -31,7 +31,7 @@
 - (void)initView{
     printf("login view init");
     
-    UIView *loginView= [[UIView alloc] initWithFrame:CGRectMake(15, 15, kDeviceWidth, kTableViewCellRowHeight*2+1)];
+    UIView *loginView= [[UIView alloc] initWithFrame:CGRectMake(15, 15, kDeviceWidth-30, kTableViewCellRowHeight*2+1)];
     loginView.backgroundColor = [UIColor whiteColor];
     loginView.layer.masksToBounds = YES;
     loginView.layer.cornerRadius = 5;
@@ -39,7 +39,7 @@
     [self.view addSubview:loginView];
     
     //手机号
-    self.phoneNumberTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, loginView.bounds.size.width, kTableViewCellRowHeight)];
+    self.phoneNumberTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, loginView.width, kTableViewCellRowHeight)];
     self.phoneNumberTextField.borderStyle = UITextBorderStyleNone;
     UIView *leftPhoneNumber = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 38, 24)];
 //    UIImageView *phoneNumberView = [[UIImageView alloc]initWithFrame:CGRectMake(7, 0, 24, 24)];
@@ -52,12 +52,12 @@
     self.phoneNumberTextField.keyboardType = UIKeyboardTypeNumberPad;
     [loginView addSubview:self.phoneNumberTextField];
     
-    UILabel *cuttingLine = [[UILabel alloc]initWithFrame:CGRectMake(0, self.phoneNumberTextField.bounds.size.width, loginView.bounds.size.width, 1)];
+    UILabel *cuttingLine = [[UILabel alloc]initWithFrame:CGRectMake(0, self.phoneNumberTextField.bottom, loginView.width, 1)];
     cuttingLine.backgroundColor = [UIColor whiteColor];
     [loginView addSubview:cuttingLine];
     
     //请输入密码
-    self.pwdTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, cuttingLine.bounds.size.width, loginView.bounds.size.width, kTableViewCellRowHeight)];
+    self.pwdTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, cuttingLine.bottom, loginView.width, kTableViewCellRowHeight)];
     self.pwdTextField.borderStyle = UITextBorderStyleNone;
     UIView *leftPwdView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 38, 24)];
 //    UIImageView *pwdView = [[UIImageView alloc]initWithFrame:CGRectMake(7, 0, 24, 24)];

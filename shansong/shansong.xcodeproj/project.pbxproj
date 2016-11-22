@@ -15,6 +15,7 @@
 		431C1AD51DE2919500ED61BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431C1AD41DE2919500ED61BE /* Assets.xcassets */; };
 		43ECF5261DE3EBE90047D17A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ECF5251DE3EBE90047D17A /* LoginViewController.m */; };
 		43ECF52D1DE3F0EC0047D17A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ECF52C1DE3F0EC0047D17A /* MainViewController.m */; };
+		43ECF5371DE435370047D17A /* Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ECF5361DE435370047D17A /* Addition.m */; };
 		43EF4EC71DE315FC00C12F3E /* 启动页640-1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EF4EC51DE315FC00C12F3E /* 启动页640-1136.png */; };
 		43EF4EC81DE315FC00C12F3E /* 启动页750-1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EF4EC61DE315FC00C12F3E /* 启动页750-1334.png */; };
 		991D9A2640EB4F8DAF190A4C /* libPods-shansong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C512F6F72528B70519255 /* libPods-shansong.a */; };
@@ -36,7 +37,10 @@
 		43ECF5251DE3EBE90047D17A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		43ECF52B1DE3F0EC0047D17A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		43ECF52C1DE3F0EC0047D17A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		43ECF52E1DE4179B0047D17A /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		43ECF52E1DE4179B0047D17A /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = shansong/Utility.h; sourceTree = SOURCE_ROOT; };
+		43ECF5351DE435370047D17A /* Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Addition.h; sourceTree = "<group>"; };
+		43ECF5361DE435370047D17A /* Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Addition.m; sourceTree = "<group>"; };
+		43ECF5381DE437680047D17A /* shansong-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shansong-prefix.pch"; sourceTree = "<group>"; };
 		43EF4EC51DE315FC00C12F3E /* 启动页640-1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页640-1136.png"; sourceTree = "<group>"; };
 		43EF4EC61DE315FC00C12F3E /* 启动页750-1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页750-1334.png"; sourceTree = "<group>"; };
 		A2E0698133D09F44B98365F8 /* Pods-shansong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shansong.release.xcconfig"; path = "Pods/Target Support Files/Pods-shansong/Pods-shansong.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		431C1AC41DE2919500ED61BE /* shansong */ = {
 			isa = PBXGroup;
 			children = (
+				43ECF52F1DE434010047D17A /* Utility */,
 				43ECF5271DE3F04D0047D17A /* Main */,
 				43ECF5231DE3E8D70047D17A /* LoginAndRegister */,
 				43EF4EC21DE313E500C12F3E /* Resource */,
@@ -88,7 +93,6 @@
 				431C1AD91DE2919500ED61BE /* Info.plist */,
 				431C1AD11DE2919500ED61BE /* shansong.xcdatamodeld */,
 				431C1AC51DE2919500ED61BE /* Supporting Files */,
-				43ECF52E1DE4179B0047D17A /* Utility.h */,
 			);
 			path = shansong;
 			sourceTree = "<group>";
@@ -96,6 +100,7 @@
 		431C1AC51DE2919500ED61BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43ECF5381DE437680047D17A /* shansong-prefix.pch */,
 				431C1AC61DE2919500ED61BE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -117,6 +122,16 @@
 				43ECF52C1DE3F0EC0047D17A /* MainViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		43ECF52F1DE434010047D17A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				43ECF52E1DE4179B0047D17A /* Utility.h */,
+				43ECF5351DE435370047D17A /* Addition.h */,
+				43ECF5361DE435370047D17A /* Addition.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		43EF4EC21DE313E500C12F3E /* Resource */ = {
@@ -272,6 +287,7 @@
 				431C1ACA1DE2919500ED61BE /* AppDelegate.m in Sources */,
 				431C1AD31DE2919500ED61BE /* shansong.xcdatamodeld in Sources */,
 				431C1AC71DE2919500ED61BE /* main.m in Sources */,
+				43ECF5371DE435370047D17A /* Addition.m in Sources */,
 				43ECF5261DE3EBE90047D17A /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +392,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/shansong-Prefix.pch";
 				INFOPLIST_FILE = shansong/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,6 +408,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/shansong-Prefix.pch";
 				INFOPLIST_FILE = shansong/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
